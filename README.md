@@ -9,12 +9,12 @@ References
 
 Game Help
 ---------
-You are the head of an up-and-coming trading company based in Hong Kong
-in the 19th century and the captain of your own ship.
+The game is set in 19th century Hong Kong. You are the head of an
+up-and-coming trading company and the captain of your own ship.
 
 You begin the game in your home port, and can sail to various ports in
 and around the South China Sea. Other ports you may visit are Shanghai,
-Nagasaki, Saigon (present day Ho Chi Min City in Vietnam), Manila,
+Nagasaki, Saigon (present day Ho Chi Minh City in Vietnam), Manila,
 Singapore, and Batavia (the old Dutch name for Jakarta, the capital
 city of Indonesia).
 
