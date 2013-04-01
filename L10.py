@@ -315,6 +315,17 @@ class Port:
     printNow("       [E]ast  lies " + self.port_to_the['e'].name + ".")
     printNow("       [W]est  lies " + self.port_to_the['w'].name + ".")
 
+class PortHongKong(Port):
+  """Derived Port class that only applies to Hong Kong, where you can get your
+  ship repaired, visit the warehouse, and borrow money from Elder Brother
+  Wu."""
+    # I think you need to call the base class' __init__ function here...
+    #def __init__:
+    def doShipRepairs(self):
+      """This method gets invoked when the ship's condition is <90%, and
+      allows you to pay McHenry from the"""
+
+
 
 class Game:
   """The map structure of the game. Basically a list of Ports, and the actions
