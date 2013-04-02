@@ -319,12 +319,12 @@ class PortHongKong(Port):
   """Derived Port class that only applies to Hong Kong, where you can get your
   ship repaired, visit the warehouse, and borrow money from Elder Brother
   Wu."""
-    # I think you need to call the base class' __init__ function here...
-    #def __init__:
-    def doShipRepairs(self):
-      """This method gets invoked when the ship's condition is <90%, and
-      allows you to pay McHenry from the"""
-
+  # I think you need to call the base class' __init__ function here...
+  #def __init__:
+  def doShipRepairs(self):
+    """This method gets invoked when the ship's condition is <90%, and
+    allows you to pay McHenry from the"""
+    pass
 
 
 class Game:
@@ -369,10 +369,11 @@ class Game:
   
   def printPortMenu(self):
     """Print a menu of ports to which you can sail"""
-    #pad = max(map(lambda p: p.name, self.ports.values()))
-    for i in self.ports: # .keys() is implicit
-      if i == 0: continue # skip 'open ocean'
-      printNow("[%i] %s" %(i, self.ports[i].name))
+    s = ''
+    for i in range(1, len(self.ports)):  # skips '0'!
+      s = s + "[%i] %s  " %(i, self.ports[i].name)
+      if i%4 == 0: s = s + '\n'
+    printNow(s) 
 
   def sailTo(self, to_port):
     """Set sail from the current port to the given destination port 'to_port'.
